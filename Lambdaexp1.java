@@ -14,6 +14,7 @@ public class Lambdaexp1
         //Also can be written as:
 
         output view1=()->{
+            System.out.print("Double Value:");
             return 123.45f;
         };  
 

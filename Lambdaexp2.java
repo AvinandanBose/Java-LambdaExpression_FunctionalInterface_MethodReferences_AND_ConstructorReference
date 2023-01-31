@@ -11,6 +11,7 @@ public class Lambdaexp2 {
 
         // Also can be written as:
         output view1 = a -> {
+            System.out.print("Double Value:");
             return Math.random() * a;
         };
 
