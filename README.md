@@ -22,6 +22,48 @@
 <h3>A <i> functional interface</i> is an interface that contains one and only one abstract method .Normally this method specifies the intended purpose of the interface.
 Thus, a functional interface typically represents a single action. </h3>
 
+```Syntax
+
+Syntax:
+
+interface MyNumber{  
+    double getValue();  
+}
+
+MyNumber view=()-> returns 123.45;
+
+which actually resembles:
+
+double myMeth(){
+
+   return 123.45;
+}
+
+where ,
+interface MyNumber{double getValue();}
+
+:is Functional Interface:
+
+:AND:
+
+(parameter)-> return val; 
+
+:is Lambda function and return single value only:
+:But it doesnot have a Block and Body :
+
+:A Lambda function with body and block looks like:
+
+(parameter)->{ //Start of a block
+
+   :Here we can write more than one statement :
+   :And Execute Them Before Return:
+   
+    return val; --> Return Statement
+    
+} //End of a block
+
+```
+
 <h1></h1>
 <h1 align="Center"> Returns a Constant Value</h1>
 <u>
