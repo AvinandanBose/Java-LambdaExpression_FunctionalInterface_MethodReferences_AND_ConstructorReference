@@ -192,3 +192,11 @@ int view = Add((a, b) -> {
 
 </u>
 
+<h1></h1>
+<h1 align="Center">Lambda Expressions and Exceptions</h1>
+<u>
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpressionAndFunctionalInterfaces/blob/main/lambdaexp6.java" > Example : Lambda Expressions and Exceptions-1 </a></li></h3>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpressionAndFunctionalInterfaces/blob/main/lambdaexp7.java" > Example : Lambda Expressions and Exceptions-2 </a></li></h3>
+
+</u>
