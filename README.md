@@ -197,6 +197,54 @@ int view = Add((a, b) -> {
 <u>
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpressionAndFunctionalInterfaces/blob/main/lambdaexp6.java" > Example : Lambda Expressions and Exceptions-1 </a></li></h3>
 
+```Syntax
+
+interface Number {
+    int add(int a, int b)throws MyOwnException;
+}
+
+class MyOwnException extends Exception{
+    public MyOwnException(String s){
+        super(s);
+    }
+}
+
+:Here MyOwnException is Custom UserDefined Exception:
+:Which inherits Exception class(java.lang.Exception) :
+:And delivers a Message Upon Exception occurs: 
+
+:Exception Condition here is:
+
+ if(a+b>10)
+ 
+:And it is thrown inside Lambda function:
+
+Number view = (a, b) -> {
+            System.out.print(a +"+"+b + "=" );
+            if(a+b>10){
+                throw new MyOwnException("Exception Occured");
+            }
+            return a + b;
+        };
+
+
+```
+
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpressionAndFunctionalInterfaces/blob/main/lambdaexp7.java" > Example : Lambda Expressions and Exceptions-2 </a></li></h3>
+
+```Syntax
+
+:Same as Above:
+
+:Here condition is:
+
+if(n.length==0)
+
+:And then it throws EmptyArrayException:
+:Which is a Custom UserDefined Exception :
+:As Above:
+
+
+```
 
 </u>
