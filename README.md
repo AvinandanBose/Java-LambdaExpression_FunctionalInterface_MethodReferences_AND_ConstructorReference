@@ -1,4 +1,4 @@
-# Java: Lambda Expression And Functional Interfaces
+# Java: Lambda Expression ,Functional Interfaces AND Method Reference
 
 <h1></h1>
 <h1 align="Center">1.  Lambda Expression </h1>
