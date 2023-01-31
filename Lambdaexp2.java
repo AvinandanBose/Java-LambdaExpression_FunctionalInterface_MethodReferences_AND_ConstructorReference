@@ -8,6 +8,13 @@ public class Lambdaexp2 {
         // Lambda expression with single parameter.
         output view = (a) -> Math.random() * a;
         System.out.println(view.getValue(100.05f));
+
+        // Also can be written as:
+        output view1 = a -> {
+            return Math.random() * a;
+        };
+
+        System.out.println(view1.getValue(100.05f));
     }
     
 }
