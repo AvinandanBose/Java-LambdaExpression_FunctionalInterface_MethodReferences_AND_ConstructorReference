@@ -42,3 +42,26 @@ output view=()->123.45f;
 ```
 
 </u>
+
+
+<h1></h1>
+<h1 align="Center">Lambda Expression With Single Parameter</h1>
+<u>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp2.java" > Example : Lambda Expression With Single Parameter </a></li></h3>
+
+```Syntax
+
+Below is functional interface:
+
+interface output {
+    int add(int a, int b);
+}
+
+Returns a constant value :
+
+output view = (a) -> Math.random() * a;
+
+```
+
+</u>
