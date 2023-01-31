@@ -52,7 +52,29 @@ output view=()->123.45f;
 
 ```Syntax
 
-Below is functional interface:
+Below is functional interface With Single Parameter:
+
+interface output {
+    double getValue(double n);
+}
+
+Returns a constant value:
+
+output view = (a) -> Math.random() * a;
+
+```
+
+</u>
+
+<h1></h1>
+<h1 align="Center">Lambda Expression With Multiple Parameter</h1>
+<u>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp4.java" > Example : Lambda Expression With Multiple Parameter </a></li></h3>
+
+```Syntax
+
+Below is functional interface With Multiple Parameter:
 
 interface output {
     int add(int a, int b);
@@ -60,8 +82,15 @@ interface output {
 
 Returns a constant value :
 
-output view = (a) -> Math.random() * a;
+output view = (a, b) -> {
+
+         :Block of code:
+         
+            return a+b;
+        };
+        
 
 ```
 
 </u>
+
