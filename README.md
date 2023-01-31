@@ -2,7 +2,7 @@
 
 <h1></h1>
 <h1 align="Center">1.  Lambda Expression </h1>
-<h3>A lambda expression is, essentially, an anonymous (that is, unnamed) method. However, this method is not executed on its own. Instead, it is used to implement a method defined by a functional interface. Thus, a lambda expression results in a form of anonymous class. Lambda expressions are also known as closures in some other languages.</h3>
+<h3>Lambda expression in Java was included in Java SE 8. A lambda expression is, essentially, an anonymous (that is, unnamed) method. However, this method is not executed on its own. Instead, it is used to implement a method defined by a functional interface. Thus, a lambda expression results in a form of anonymous class. Lambda expressions are also known as closures in some other languages.</h3>
 
 <h3> <i> '->' </i> is known as lambda operator or the arrow operator.</h3>
 
@@ -21,3 +21,24 @@
 
 <h3>A <i> functional interface</i> is an interface that contains one and only one abstract method .Normally this method specifies the intended purpose of the interface.
 Thus, a functional interface typically represents a single action. </h3>
+
+<h1></h1>
+<h1 align="Center"> Returns a Constant Value</h1>
+<u>
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp1.java" > Example : Returns a Constant Value </a></li></h3>
+
+```Syntax
+
+Below is functional interface:
+
+interface output{  
+    float view();  
+}
+
+Returns a constant value :
+
+output view=()->123.45f;
+
+```
+
+</u>
