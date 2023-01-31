@@ -35,9 +35,20 @@ interface output{
     float view();  
 }
 
-Returns a constant value :
+Returns a single value only:
 
 output view=()->123.45f;
+
+Returns a single value with executing :
+Multiple Lines of Code: 
+
+output view=()->{
+
+ :Executes multiple lines of code inside block:
+ 
+    returns 123.45f;
+
+};
 
 ```
 
@@ -58,9 +69,21 @@ interface output {
     double getValue(double n);
 }
 
-Returns a constant value:
+Returns a single value only:
 
 output view = (a) -> Math.random() * a;
+
+Returns a single value with executing :
+Multiple Lines of Code: 
+
+output view=(a)->{
+
+ :Executes multiple lines of code inside block:
+ 
+    returns Math.random() * a;
+
+};
+
 
 ```
 
@@ -88,6 +111,39 @@ output view = (a, b) -> {
          
             return a+b;
         };
+        
+
+```
+
+</u>
+
+
+<h1></h1>
+<h1 align="Center">Passing Lambda Expression as Argument.</h1>
+<u>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp5.java" > Example : Passing Lambda Expression as Argument. </a></li></h3>
+
+```Syntax
+
+Below is functional interface With Multiple Parameter:
+
+interface output {
+    int add(int a, int b);
+}
+
+Passing Lambda Exp as argument:
+
+static int Add(output a,int b, int c){
+        return a.add( b,c) ;
+    }
+
+Returns a constant value :
+
+int view = Add((a, b) -> {
+            System.out.print(a +"+"+b + "=" );
+            return a + b;
+        },10,20);
         
 
 ```
