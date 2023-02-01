@@ -409,5 +409,20 @@ public class MethodsReftoStatMeth2 {
 <h1></h1>
 <h1 align="Center">Most Simple Way to Study Method Reference</h1> 
 <ul>
-<li><h3>
+<h3><i>1. Using Static</i></h3>
+<ul>
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef4.java" > Example : 1 </a></li></h3>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef5.java" > Example : 2 </a></li></h3>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef6.java" > Example : 3 </a></li></h3>
+
+</ul>
+<h3><i>2. Using Instance</i></h3>
+<ul>
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef1.java" > Example : 1 </a></li></h3>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef2.java" > Example : 2 </a></li></h3>
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef3.java" > Example : 3 </a></li></h3>
 </ul>
