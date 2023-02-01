@@ -536,10 +536,12 @@ public class MethodRef6 {
     
 </ul>
 <h3><i>2. Using Instance</i></h3>
+<h3><i><ins>Note:</ins></i>As static is not used here , hence we need to create instance of each class to access everything of Class(Members of class)</i></h3>
 <ul>
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef1.java" > Example : 1 </a></li></h3>
     
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef2.java" > Example : 2 </a></li></h3>
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef3.java" > Example : 3 </a></li></h3>
+<h3><i><ins>Note:</ins></i>Explanation of above examples remain same as static . Just instance /object of class is used to gain access.</i></h3>
 </ul>
