@@ -257,3 +257,9 @@ if(n.length==0)
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpressionAndFunctionalInterfaces/blob/main/lambdaexp8.java" > Example : Lambda Expressions and Variable Capture </a></li></h3>
 </ul>
+
+<h1></h1>
+<h1 align="Center">3.  Method References </h1>
+<ul>
+
+</ul>
