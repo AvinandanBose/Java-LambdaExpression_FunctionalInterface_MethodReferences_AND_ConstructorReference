@@ -16,11 +16,11 @@ public class MethodsReftoStatMeth1 {
         return addition.add(a, b);
     }
     public static void main(String[] args) {
-        // General Way of Calling Static Method.
+        //Method Reference by creating instance of functional interface
         Addition addition = AdditionImpl::add;
         System.out.println(addition.add(10, 20));
 
-        // Passing Lambda Expression as Argument.
+        // Passing Method Reference as Argument.
 
         Integer sum = summation(AdditionImpl::add, 40, 50);
         System.out.println(sum);
