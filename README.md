@@ -334,7 +334,7 @@ Here in the above eg:
 Addition addition → We create instance of Functional Interface
 AdditionImpl::add → ClassName::methodName
 
-And passing Lambda Expression as argument:
+And passing Method Reference as argument:
 Integer sum = summation(AdditionImpl::add, 40, 50);
 
 :As the above function returns an Integer , hence we need:
