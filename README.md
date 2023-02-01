@@ -66,7 +66,7 @@ interface MyNumber{double getValue();}
 
 <h1></h1>
 <h1 align="Center"> Returns a Constant Value</h1>
-<u>
+<ul>
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp1.java" > Example : Returns a Constant Value </a></li></h3>
 
 ```Syntax
@@ -94,12 +94,12 @@ output view=()->{
 
 ```
 
-</u>
+</ul>
 
 
 <h1></h1>
 <h1 align="Center">Lambda Expression With Single Parameter</h1>
-<u>
+<ul>
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp2.java" > Example : Lambda Expression With Single Parameter </a></li></h3>
 
@@ -129,11 +129,11 @@ output view=(a)->{
 
 ```
 
-</u>
+</ul>
 
 <h1></h1>
 <h1 align="Center">Lambda Expression With Multiple Parameter</h1>
-<u>
+<ul>
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp4.java" > Example : Lambda Expression With Multiple Parameter </a></li></h3>
 
@@ -157,12 +157,12 @@ output view = (a, b) -> {
 
 ```
 
-</u>
+</ul>
 
 
 <h1></h1>
 <h1 align="Center">Passing Lambda Expression as Argument.</h1>
-<u>
+<ul>
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp5.java" > Example : Passing Lambda Expression as Argument. </a></li></h3>
 
@@ -190,11 +190,11 @@ int view = Add((a, b) -> {
 
 ```
 
-</u>
+</ul>
 
 <h1></h1>
 <h1 align="Center">Lambda Expressions and Exceptions</h1>
-<u>
+<ul>
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpressionAndFunctionalInterfaces/blob/main/lambdaexp6.java" > Example : Lambda Expressions and Exceptions-1 </a></li></h3>
 
 ```Syntax
@@ -247,4 +247,12 @@ if(n.length==0)
 
 ```
 
-</u>
+</ul>
+
+<h1></h1>
+<h1 align="Center">Lambda Expressions and Variable Capture</h1>
+
+<ul>
+<h3>When a lambda expression uses a local variable from its enclosing scope, a special situation is created that is referred to as a <i><ins>variable capture</ins></i>.In this case, a lambda expression may only use local variable that are <i><ins>effectively final</ins></i>. An <i><ins>effectively final</ins></i> variable is one whose value doesnot change after its first assigned. There is no need to explicitly declare such a variable as <i><ins>final</ins></i>, although doing so would not be an error </h3>
+
+</ul>
