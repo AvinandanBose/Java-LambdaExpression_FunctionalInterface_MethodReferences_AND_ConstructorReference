@@ -298,6 +298,9 @@ public class lambdaexp8 {
 ClassName::methodName   
     
 ```
+
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodsReftoStatMeth1.java" > Example : Method References to static Methods </a></li></h3>
+
 </h3>
     
 </ul>
