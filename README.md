@@ -412,6 +412,34 @@ public class MethodsReftoStatMeth2 {
 <h3><i>1. Using Static</i></h3>
 <ul>
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef4.java" > Example : 1 </a></li></h3>
+    
+```Syntax
+    
+interface MySum3 {
+    int add(int a, int b);
+}
+
+public class MethodRef4 {
+    static int add(int a, int b) {
+        System.out.println("A val=" + a + " " + "B val=" + b + " " + (a + b));
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        MySum3 mySum3 = MethodRef4::add;
+        System.out.println(mySum3.add(10, 20));
+    }
+}
+    
+:Here MySum3 is Functional interface:
+:mysum3 is instance of Functional interface MySum3:
+:As MySum3 is Functional Interface , therefore it needs reference to a Function:
+:i.e. MySum3 mySum3 = Reference to a Function:
+:Hence Method References to static Methods is used i.e.:
+:MySum3 mySum3 = MethodRef4::add:
+:And then the instance of functional interface is ready to call the add function: 
+    
+```
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef5.java" > Example : 2 </a></li></h3>
 
@@ -421,7 +449,7 @@ public class MethodsReftoStatMeth2 {
 <h3><i>2. Using Instance</i></h3>
 <ul>
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef1.java" > Example : 1 </a></li></h3>
-
+    
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef2.java" > Example : 2 </a></li></h3>
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef3.java" > Example : 3 </a></li></h3>
