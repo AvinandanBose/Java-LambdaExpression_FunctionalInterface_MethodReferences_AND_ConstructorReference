@@ -17,6 +17,7 @@ public class MethodRef6 {
     public static void main(String[] args) {
         SumN sumN = new SumN();
         MySum3 mySum3 = sumN::Sum;
+        System.out.println(mySum3.add(10, 20));
         System.out.println(add(mySum3, 10, 20));
         System.out.println(add(mySum3::add, 40, 50));
     }

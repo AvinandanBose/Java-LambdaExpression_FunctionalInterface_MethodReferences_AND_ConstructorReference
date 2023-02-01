@@ -17,6 +17,7 @@ public class MethodRef3 {
         MethodRef3 methodRef3 = new MethodRef3();
         SumN sumN = new SumN();
         MySum2 mySum2 = sumN::Sum;
+        System.out.println(mySum2.add( 10, 20));
         System.out.println(methodRef3.add(mySum2, 10, 20));
         System.out.println(methodRef3.add(mySum2::add, 40, 50));
         

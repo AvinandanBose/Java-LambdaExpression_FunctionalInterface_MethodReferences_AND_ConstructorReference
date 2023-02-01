@@ -11,6 +11,7 @@ public class MethodRef2 {
         MethodRef2 methodRef2 = new MethodRef2();
        
         MySum1 mySum1 = (a, b) -> a + b;
+        System.out.println(mySum1.add( 10, 20));
         System.out.println(methodRef2.add(mySum1, 10, 20));
         System.out.println(methodRef2.add(mySum1::add, 10, 20));
     }
