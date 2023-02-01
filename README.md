@@ -443,6 +443,45 @@ public class MethodRef4 {
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef5.java" > Example : 2 </a></li></h3>
 
+```Syntax
+    
+interface MySum4 {
+    int add(int a, int b);
+}
+public class MethodRef5 {
+    static int add(MySum4 mysum4,int a, int b) {
+        System.out.println("A val=" + a + " " + "B val=" + b + " " + (a + b));
+        return mysum4.add(a, b);
+
+        }
+    public static void main(String[] args) {
+        MySum4 mySum4 = (a, b) -> a + b;
+         System.out.println(mySum4.add(10, 20));
+        System.out.println(add(mySum4, 10, 20));
+        System.out.println(add(mySum4::add, 10, 20));
+        }
+    }
+    
+
+    
+:Here MySum4 is Functional interface:
+:mysum4 is instance of Functional interface MySum4:
+:As MySum3 is Functional Interface , therefore it needs reference to a Function:
+:i.e. MySum4 mySum4 = Reference to a Function:
+:But here instance of Functional interface is passed as parameter:
+:i.e. static int add(MySum4 mysum4,....){....}:
+:Hence MySum4 mySum4 = MethodRef5::add will lead to error.:
+:To overcome the above problem we have used Lambda Function.:
+:i.e. MySum4 mySum4 = (a, b) -> a + b; Refered to function of Functional interface.:
+:i.e. Property of Lambda Function.:
+:And then the instance of functional interface is ready to call the add function:
+:Also Now, we can either pass instance of Functional interface as argument in MethodRef5.add():
+:i.e. add(mySum4,....):
+:Method Reference to Static Method can be passed as an argumnet in add() func of MethodRef5 class.:
+:i.e. add(mySum4::add,....):
+    
+```
+
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef6.java" > Example : 3 </a></li></h3>
 
 </ul>
