@@ -256,6 +256,29 @@ if(n.length==0)
 <h3>When a lambda expression uses a local variable from its enclosing scope, a special situation is created that is referred to as a <i><ins>variable capture</ins></i>.In this case, a lambda expression may only use local variable that are <i><ins>effectively final</ins></i>. An <i><ins>effectively final</ins></i> variable is one whose value doesnot change after its first assigned. There is no need to explicitly declare such a variable as <i><ins>final</ins></i>, although doing so would not be an error. </h3>
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpressionAndFunctionalInterfaces/blob/main/lambdaexp8.java" > Example : Lambda Expressions and Variable Capture </a></li></h3>
+
+```Syntax
+
+interface MyFunc{
+    int func(int n);
+}
+
+public class lambdaexp8 {
+    public static void main(String[] args){
+        int num=10;
+
+        MyFunc myLambda = (n) -> {
+            int v = num + n;
+            // num++; // Error → num is effectively final:
+            return v;
+        };
+        // num = 9; // Error → num is effectively final:
+        System.out.println( myLambda.func(10));
+    }
+}
+
+```
+
 </ul>
 
 <h1></h1>
