@@ -284,5 +284,21 @@ public class lambdaexp8 {
 <h1></h1>
 <h1 align="Center">3.  Method References </h1>
 <ul>
+<li><h3>1 . A method reference provides a way to refer a method without executing it.</h3></li>
+<li><h3>2. A method reference relates to lambda expressions , since it, too requires a target type context of a compatible functional interface.</h3></li>
+<li><h3>3. When evaluated, a method reference also creates an instance of the functional interface.</h3></li>
+    
+<h1></h1>
+<h1 align="Center">Method References to static Methods</h1> 
 
+<h3 align="Center">
+    
+```Syntax 
+   
+ClassName::methodName   
+    
+```
+</h3>
+    
 </ul>
+
