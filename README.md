@@ -408,3 +408,6 @@ public class MethodsReftoStatMeth2 {
 
 <h1></h1>
 <h1 align="Center">Most Simple Way to Study Method Reference</h1> 
+<ul>
+<li><h3>
+</ul>
