@@ -291,6 +291,8 @@ public class lambdaexp8 {
 <h1></h1>
 <h1 align="Center">Method References to static Methods</h1> 
 
+<h3>To create a <i>static</i> method reference , we use this general syntax: </h3>
+
 <h3 align="Center">
     
 ```Syntax 
@@ -299,9 +301,64 @@ ClassName::methodName
     
 ```
 
+</h3>
+
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodsReftoStatMeth1.java" > Example : Method References to static Methods </a></li></h3>
+
+```Syntax
+
+interface Addition{
+    int add(int a, int b);
+}
+
+class AdditionImpl {
+   static int add(int a, int b){
+        return a+b;
+    }
+}
+
+
+public class MethodsReftoStatMeth1 {
+    static int summation(Addition addition, int a, int b){
+        return addition.add(a, b);
+    }
+    public static void main(String[] args) {
+        Addition addition = AdditionImpl::add;
+        System.out.println(addition.add(10, 20));
+        Integer sum = summation(AdditionImpl::add, 40, 50);
+        System.out.println(sum);
+    }
+}
+
+Here in the above eg:
+Addition addition → We create instance of Functional Interface
+AdditionImpl::add → ClassName::methodName
+
+And passing Lambda Expression as argument:
+Integer sum = summation(AdditionImpl::add, 40, 50);
+
+:As the above function returns an Integer , hence we need:
+:an Integer variable here to store the returned value.:
+
+```
 
 </h3>
     
 </ul>
 
+<h1></h1>
+<h1 align="Center">Method References to Instance Methods</h1> 
+
+<h3>To pass a reference to an instance method on a specific object, use this basic syntax:</h3>
+
+<h3 align="Center">
+    
+```Syntax 
+   
+objRef::methodName   
+    
+```
+
+</h3>
+
+</h3>
