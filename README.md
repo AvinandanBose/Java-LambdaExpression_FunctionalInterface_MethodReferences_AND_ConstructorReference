@@ -466,7 +466,7 @@ public class MethodRef5 {
     
 :Here MySum4 is Functional interface:
 :mysum4 is instance of Functional interface MySum4:
-:As MySum3 is Functional Interface , therefore it needs reference to a Function:
+:As MySum4 is Functional Interface , therefore it needs reference to a Function:
 :i.e. MySum4 mySum4 = Reference to a Function:
 :But here instance of Functional interface is passed as parameter:
 :i.e. static int add(MySum4 mysum4,....){....}:
@@ -477,13 +477,63 @@ public class MethodRef5 {
 :And then the instance of functional interface is ready to call the add function:
 :Also Now, we can either pass instance of Functional interface as argument in MethodRef5.add():
 :i.e. add(mySum4,....):
-:Method Reference to Static Method can be passed as an argumnet in add() func of MethodRef5 class.:
+:Or,Method Reference to Static Method can be passed as an argumnet in add() func of MethodRef5 class.:
 :i.e. add(mySum4::add,....):
     
 ```
 
 <h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_AND_MethodReferences/blob/main/MethodRef6.java" > Example : 3 </a></li></h3>
 
+```Syntax
+    
+interface MySum3 {
+    int add(int a, int b);
+}
+
+class SumN {
+    int Sum(int a, int b) {
+        System.out.println("A val=" + a + " " + "B val=" + b + " " + (a + b));
+        return a + b;
+    }
+}
+public class MethodRef6 {
+    static int add(MySum3 sum, int a, int b) {
+        System.out.println("A val=" + a + " " + "B val=" + b + " " + (a + b));
+        return sum.add(a, b);
+    }
+
+    public static void main(String[] args) {
+        SumN sumN = new SumN();
+        MySum3 mySum3 = sumN::Sum;
+        System.out.println(mySum3.add(10, 20));
+        System.out.println(add(mySum3, 10, 20));
+        System.out.println(add(mySum3::add, 40, 50));
+    }
+
+    
+}
+
+
+    
+:Here MySum3 is Functional interface:
+:mysum3 is instance of Functional interface MySum3:
+:As MySum3 is Functional Interface , therefore it needs reference to a Function:
+:i.e. MySum3 mySum3 = Reference to a Function:
+:Here we have a Class SumN which obtain a function Sum.:
+:Hence sumN::Sum can be passed as reference.:
+:i.e. MySum3 mySum3 = sumN::Sum;:
+:i.e. Sum function of sumN class must define the add function of Functional interface MySum3:
+:Having same type of parameter and same amount of parameters , else will cause error:
+:Just like properties of Lambda Function.:
+:And then the instance of functional interface is ready to call the add function:
+:Also Now, we can either pass instance of Functional interface as argument in MethodRef6.add():
+:i.e. add(mySum3,....):
+:Or,Method Reference to Static Method can be passed as an argumnet in add() func of MethodRef6 class.:
+:i.e. add(mySum3::add,....):
+    
+```
+
+    
 </ul>
 <h3><i>2. Using Instance</i></h3>
 <ul>
