@@ -11,9 +11,7 @@ public class MethodRef2 {
         MethodRef2 methodRef2 = new MethodRef2();
        
         MySum1 mySum1 = (a, b) -> a + b;
-        System.out.println("Without calling  the add method of MySum1 interface, it will generate output");
         System.out.println(methodRef2.add(mySum1, 10, 20));
-        System.out.println("It will call the add method of MySum1 interface and then generate output ");
         System.out.println(methodRef2.add(mySum1::add, 10, 20));
     }
 }
