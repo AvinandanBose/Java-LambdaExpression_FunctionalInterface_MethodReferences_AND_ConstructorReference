@@ -390,7 +390,7 @@ public class MethodsReftoStatMeth2 {
 
         System.out.println(addition.add(10, 20));
 
-        :Passing ,Method References to Instance Methods Reference as Argument:
+        :Passing ,Method References to Instance Methods as Argument:
         Integer sum = methodsReftoStatMeth2.summation(additionImpl::addition, 40, 50);
         System.out.println(sum);
         
