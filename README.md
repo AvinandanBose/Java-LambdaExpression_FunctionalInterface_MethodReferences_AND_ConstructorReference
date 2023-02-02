@@ -548,3 +548,37 @@ public class MethodRef6 {
 
 <h1></h1>
 <h1 align="Center">4.Constructor References</h1> 
+<ul>
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression_FunctionalInterface_MethodReferences_AND_ConstructorReference/blob/main/ConstRef1.java" > Example : Constructor References </a></li></h3>
+
+```Syntax
+
+interface MyFunc {
+    MyClass func(int a, int b);
+}
+
+class MyClass {
+    MyClass(int a, int b) {
+        System.out.println("a =" + a + "b=" + b);
+    }
+}
+
+public class ConstRef1 {
+    public static void main(String[] args) {
+        MyFunc f = MyClass::new;
+        MyClass mc = f.func(10, 20);
+    }
+}
+
+:Here MyFunc is Functional Interface:
+:MyFunc contains a func() method  :
+:This  func() method  creates a reference with class MyClass:
+:func() has two int type parameter:
+:Hence MyClass must have a Constructor with two int parameter:
+:Notifying Constructor is a special type of Function with no return value and starts with class name:
+:Now,MyClass:new → creates a constructor reference to a MyClass constructor.:
+:f is the instance of MyFunc Functional Interface:
+:f calls 'func' Function, refering value of (int a and int b) to the Constructor :
+```
+
+</ul>
