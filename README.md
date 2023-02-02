@@ -582,3 +582,5 @@ public class ConstRef1 {
 ```
 
 </ul>
+
+<h1>👉<a href= "https://github.com/AvinandanBose/JavaGeneric">Implementation of Lambda Expression, Functional Interface Method References AND ConstructorReference in Java Generics</h1>
