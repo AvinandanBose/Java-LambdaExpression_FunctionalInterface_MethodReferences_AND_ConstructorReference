@@ -135,7 +135,7 @@ output view=(a)->{
 <h1 align="Center">Lambda Expression With Multiple Parameter</h1>
 <ul>
 
-<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp4.java" > Example : Lambda Expression With Multiple Parameter </a></li></h3>
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/lambdaexp4.java" > Example : Lambda Expression With Multiple Parameter </a></li></h3>
 
 ```Syntax
 
@@ -164,7 +164,7 @@ output view = (a, b) -> {
 <h1 align="Center">Passing Lambda Expression as Argument.</h1>
 <ul>
 
-<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/Lambdaexp5.java" > Example : Passing Lambda Expression as Argument. </a></li></h3>
+<h3><li><a href = "https://github.com/AvinandanBose/Java-LambdaExpression/blob/main/lambdaexp5.java" > Example : Passing Lambda Expression as Argument. </a></li></h3>
 
 ```Syntax
 
